@@ -3,32 +3,32 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda</groupId>
-    <artifactId>camunda-release-parent</artifactId>
-    <version>3.7.2</version>
+    <groupId>org.cadenzaflow</groupId>
+    <artifactId>cadenzaflow-release-parent</artifactId>
+    <version>1.0.0</version>
     <relativePath />
   </parent>
 
-  <groupId>org.camunda.bpm.archetype</groupId>
-  <artifactId>camunda-archetype-root</artifactId>
-  <version>7.23.0</version>
+  <groupId>org.cadenzaflow.bpm.archetype</groupId>
+  <artifactId>cadenzaflow-archetype-root</artifactId>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
 
-  <name>camunda Archetypes Parent POM</name>
+  <name>CadenzaFlow Archetypes Parent POM</name>
 
   <modules>
-    <module>camunda-archetype-ejb-war</module>
-    <module>camunda-archetype-servlet-war</module>
-    <module>camunda-archetype-cockpit-plugin</module>
-    <module>camunda-archetype-engine-plugin</module>
-    <module>camunda-archetype-servlet-war-demo</module>
-    <module>camunda-archetype-spring-boot</module>
-    <module>camunda-archetype-spring-boot-demo</module>
+    <module>cadenzaflow-archetype-ejb-war</module>
+    <module>cadenzaflow-archetype-servlet-war</module>
+    <module>cadenzaflow-archetype-cockpit-plugin</module>
+    <module>cadenzaflow-archetype-engine-plugin</module>
+    <module>cadenzaflow-archetype-servlet-war-demo</module>
+    <module>cadenzaflow-archetype-spring-boot</module>
+    <module>cadenzaflow-archetype-spring-boot-demo</module>
   </modules>
 
   <properties>
     <version.assertj-core>3.26.3</version.assertj-core>
-    <version.camunda>7.23.0</version.camunda>
+    <version.cadenzaflow>1.0.0</version.cadenzaflow>
     <version.camunda-bpm-assert-scenario>1.1.1</version.camunda-bpm-assert-scenario>
     <version.camunda-test-coverage>2.1.0</version.camunda-test-coverage>
     <version.h2>2.3.232</version.h2>
@@ -88,22 +88,22 @@
   </build>
 
   <scm>
-    <connection>scm:git:ssh://git@github.com/camunda/camunda-archetypes.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/camunda/camunda-archetypes.git</developerConnection>
-    <url>https://github.com/camunda/camunda-archetypes</url>
-    <tag>7.23.0</tag>
+        <connection>scm:git:ssh://git@github.com/cadenzaflow/cadenzaflow-archetypes.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/cadenzaflow/cadenzaflow-archetypes.git</developerConnection>
+        <url>https://github.com/cadenzaflow/cadenzaflow-archetypes</url>
+        <tag>1.0.0</tag>
   </scm>
 
   <distributionManagement>
     <repository>
-      <id>camunda-nexus</id>
-      <name>Camunda Platform Maven Repository</name>
-      <url>https://artifacts.camunda.com/artifactory/camunda-bpm/</url>
+            <id>cadenzaflow-nexus</id>
+            <name>CadenaFlow Platform Maven Repository</name>
+            <url>https://nexus.cadenzaflow.com/repository/nexus/cadenzaflow/</url>
     </repository>
     <snapshotRepository>
-      <id>camunda-nexus</id>
-      <name>Camunda Platform Maven Snapshot Repository</name>
-      <url>https://artifacts.camunda.com/artifactory/camunda-bpm-snapshots/</url>
+            <id>cadenzaflow-nexus</id>
+            <name>CadenaFlow Platform Maven Snapshot Repository</name>
+            <url>https://nexus.cadenzaflow.com/repository/cadenzaflow-snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
